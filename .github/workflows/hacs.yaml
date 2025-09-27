@@ -16,14 +16,8 @@ jobs:
         with:
           python-version: '3.13.x'
 
-      - uses: actions/cache@v4
-        name: Cache
-        with:
-          path: |
-            ~/.cache/pip
-          key: custom-component-ci
-
       - name: HACS Action
         uses: hacs/action@main
         with:
-          CATEGORY: integration
+          category: integration
+          ignore: brands
