@@ -190,8 +190,8 @@ class MpkKrSensor(Entity):
 
     @staticmethod
     def get_data(stop_id, platform, mode="departure"):
-        base_url_tram = 'http://www.ttss.krakow.pl/internetservice/services/passageInfo/stopPassages/stop?stop={}&mode={}&language=pl'
-        base_url_bus = 'http://ttss.mpk.krakow.pl/internetservice/services/passageInfo/stopPassages/stop?stop={}&mode={}'
+        base_url_tram = 'https://www.ttss.krakow.pl/internetservice/services/passageInfo/stopPassages/stop?stop={}&mode={}&language=pl'
+        base_url_bus = 'https://ttss.mpk.krakow.pl/internetservice/services/passageInfo/stopPassages/stop?stop={}&mode={}'
         base_url = base_url_tram if platform == "tram" else base_url_bus
         address = base_url.format(stop_id, mode)
         response = requests.get(address)
