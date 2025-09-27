@@ -1,11 +1,11 @@
 {
   "domain": "mpk_kr",
   "name": "MPK KR",
-  "documentation": "https://github.com/PiotrMachowski/Home-Assistant-custom-components-MPK-KR",
-  "issue_tracker": "https://github.com/PiotrMachowski/Home-Assistant-custom-components-MPK-KR/issues",
-  "dependencies": [],
   "codeowners": ["@PiotrMachowski"],
+  "dependencies": [],
+  "documentation": "https://github.com/PiotrMachowski/Home-Assistant-custom-components-MPK-KR",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/PiotrMachowski/Home-Assistant-custom-components-MPK-KR/issues",
   "requirements": ["requests"],
-  "version": "v0.0.0",
-  "iot_class": "cloud_polling"
+  "version": "v0.0.0"
 }
